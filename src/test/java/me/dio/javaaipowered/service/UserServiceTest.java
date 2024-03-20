@@ -40,14 +40,12 @@ import java.util.*;
 @AutoConfigureMockMvc(addFilters = false)
 public class UserServiceTest {
     @Autowired
-    private MockMvc mockMvc;
+    MockMvc mockMvc;
 
     @Autowired
-    private  UserService userRepository;
-    @InjectMockKs
-    private  UserServiceImpl userService;
-
-    private static ObjectMapper objectMapper = new ObjectMapper();
+    UserService userRepository;
+    @Autowired
+    ObjectMapper objectMapper;
 
     private static String url = "/users";
 

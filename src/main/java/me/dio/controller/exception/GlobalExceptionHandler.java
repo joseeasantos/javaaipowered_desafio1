@@ -13,13 +13,11 @@ import me.dio.service.exception.NotFoundException;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-
     private static final Logger LOGGER = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     @ExceptionHandler(BusinessException.class)
-    @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
     public ResponseEntity<String> handleBusinessException(BusinessException ex) {
-        ex.printStackTrace();
+        LOGGER.error("Business Exception", ex);
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.UNPROCESSABLE_ENTITY);
     }
 
