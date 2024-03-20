@@ -11,7 +11,7 @@ baseado no projeto desenvolvido pelo [Venilton FalvoJr](https://github.com/falvo
 - **Railway**: facilita o deploy e monitoramento de nossas soluções na nuvem, além de oferecer diversos bancos de dados como serviço e pipelines de CI/CD.
 
 ## Tecnologias Adicionadas
-- **Teste de integração**: Adicionado teste para a API desenvolvida.
+- **Teste de integração**: Adicionado teste para a API desenvolvida;
 - **Docker**: adicionado Docker image para banco de dados Postgres em tempo de desenvolvimento.
 
 ## [Link do Figma](https://www.figma.com/file/0ZsjwjsYlYd3timxqMWlbj/SANTANDER---Projeto-Web%2FMobile?type=design&node-id=1421%3A432&mode=design&t=6dPQuerScEQH0zAn-1)
